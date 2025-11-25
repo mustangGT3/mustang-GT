@@ -1,0 +1,25 @@
+# robots.txt for Mustang GT Website
+# Allows search engines to crawl all pages, helps with indexing
+
+User-agent: *
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /img/
+Allow: /classicimg/
+Allow: /engimg/
+Allow: /gtimg/
+Allow: /logoimg/
+
+# Disallow paths that shouldn't be indexed
+Disallow: /admin/
+Disallow: /.github/
+Disallow: /node_modules/
+
+# Specific rules for Googlebot (can crawl faster)
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Point search engines to sitemap
+Sitemap: https://yourdomain.com/sitemap.xml
