@@ -21,6 +21,67 @@
     }
   }
 
+  async function updateMetaTags(doc) {
+    // Update meta description
+    const newDescription = doc.querySelector('meta[name="description"]');
+    if (newDescription) {
+      const existing = document.querySelector('meta[name="description"]');
+      if (existing) existing.setAttribute('content', newDescription.getAttribute('content'));
+    }
+
+    // Update meta keywords
+    const newKeywords = doc.querySelector('meta[name="keywords"]');
+    if (newKeywords) {
+      const existing = document.querySelector('meta[name="keywords"]');
+      if (existing) existing.setAttribute('content', newKeywords.getAttribute('content'));
+    }
+
+    // Update canonical tag
+    const newCanonical = doc.querySelector('link[rel="canonical"]');
+    if (newCanonical) {
+      let canonical = document.querySelector('link[rel="canonical"]');
+      if (!canonical) {
+        canonical = document.createElement('link');
+        canonical.rel = 'canonical';
+        document.head.appendChild(canonical);
+      }
+      canonical.setAttribute('href', newCanonical.getAttribute('href'));
+    }
+
+    // Update OG:title
+    const newOgTitle = doc.querySelector('meta[property="og:title"]');
+    if (newOgTitle) {
+      const existing = document.querySelector('meta[property="og:title"]');
+      if (existing) existing.setAttribute('content', newOgTitle.getAttribute('content'));
+    }
+
+    // Update OG:description
+    const newOgDesc = doc.querySelector('meta[property="og:description"]');
+    if (newOgDesc) {
+      const existing = document.querySelector('meta[property="og:description"]');
+      if (existing) existing.setAttribute('content', newOgDesc.getAttribute('content'));
+    }
+
+    // Update OG:url
+    const newOgUrl = doc.querySelector('meta[property="og:url"]');
+    if (newOgUrl) {
+      const existing = document.querySelector('meta[property="og:url"]');
+      if (existing) existing.setAttribute('content', newOgUrl.getAttribute('content'));
+    }
+
+    // Update robots meta tag
+    const newRobots = doc.querySelector('meta[name="robots"]');
+    if (newRobots) {
+      let robots = document.querySelector('meta[name="robots"]');
+      if (!robots) {
+        robots = document.createElement('meta');
+        robots.name = 'robots';
+        document.head.appendChild(robots);
+      }
+      robots.setAttribute('content', newRobots.getAttribute('content'));
+    }
+  }
+
   async function loadIntoMain(url, replaceState = false) {
     const doc = await fetchPage(url);
     if (!doc) return;
@@ -34,6 +95,9 @@
     // update title
     const newTitle = doc.querySelector('title');
     if (newTitle) document.title = newTitle.innerText;
+
+    // Update SEO meta tags
+    updateMetaTags(doc);
 
     // update URL & history
     if (replaceState) {
