@@ -1,5 +1,6 @@
 # robots.txt for Mustang GT Website
 # Allows search engines to crawl all pages, helps with indexing
+# Replace "yourdomain.com" with your actual domain name below
 
 User-agent: *
 Allow: /
@@ -22,4 +23,5 @@ Allow: /
 Crawl-delay: 0
 
 # Point search engines to sitemap
+# UPDATE THIS: Replace "yourdomain.com" with your actual domain
 Sitemap: https://yourdomain.com/sitemap.xml
