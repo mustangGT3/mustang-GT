@@ -1,0 +1,159 @@
+@import url('style.css');
+
+/* Blog page specific styles */
+
+/* Mobile Responsive Styles for Blog Page */
+@media screen and (max-width: 1024px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .page-content {
+    padding: 30px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-content {
+    padding: 2rem 1rem;
+  }
+
+  .page-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .page-content > p {
+    font-size: 0.95rem;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .post {
+    padding: 1.25rem;
+  }
+
+  .post h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .post-thumb {
+    height: 180px;
+  }
+
+  .post p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .read-more {
+    margin-top: 8px;
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .page-content {
+    padding: 1.75rem 1rem;
+  }
+
+  .page-content h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .page-content > p {
+    font-size: 0.9rem;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .post {
+    padding: 1rem;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+
+  .post h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .post-thumb {
+    height: 160px;
+    margin: 8px 0;
+  }
+
+  .post p {
+    font-size: 0.85rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+  }
+
+  .read-more {
+    font-size: 0.9rem;
+    margin-top: 6px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page-content {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .page-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .page-content > p {
+    font-size: 0.85rem;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .post {
+    padding: 0.9rem;
+    margin-bottom: 8px;
+    border-radius: 8px;
+  }
+
+  .post h2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .post-thumb {
+    height: 140px;
+    margin: 6px 0;
+    border-radius: 6px;
+  }
+
+  .post p {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .post .date {
+    font-size: 0.75rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .read-more {
+    font-size: 0.85rem;
+    margin-top: 4px;
+  }
+}

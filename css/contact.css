@@ -1,0 +1,218 @@
+@import url('style.css');
+
+/* Contact page specific styles */
+
+/* Mobile Responsive Styles for Contact Page */
+@media screen and (max-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .contact-right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-content {
+    padding: 2rem 1rem;
+  }
+
+  .page-content h1 {
+    font-size: 2rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .contact-form label {
+    font-size: 0.95rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+  }
+
+  .contact-right {
+    width: 100%;
+  }
+
+  .contact-right .contact-info,
+  .contact-right .hours,
+  .contact-right .faq,
+  .contact-right .map-placeholder {
+    margin-bottom: 12px;
+  }
+
+  .map-box {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .page-content {
+    padding: 1.75rem 1rem;
+  }
+
+  .page-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .contact-form label {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    padding: 9px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .contact-form textarea {
+    min-height: 100px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  .newsletter-footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .newsletter-footer input,
+  .newsletter-footer button {
+    width: 100%;
+    padding: 9px;
+  }
+
+  .contact-right .contact-info h3,
+  .contact-right .hours h3,
+  .contact-right .faq h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .map-box {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page-content {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .page-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .page-content > p {
+    font-size: 0.9rem;
+  }
+
+  .contact-form {
+    padding: 0.8rem;
+  }
+
+  .contact-form label {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .newsletter-footer {
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 8px;
+  }
+
+  .newsletter-footer input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .newsletter-footer button {
+    padding: 8px;
+    width: 100%;
+  }
+
+  .contact-right .contact-info,
+  .contact-right .hours,
+  .contact-right .faq,
+  .contact-right .map-placeholder {
+    padding: 1rem;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+
+  .contact-right .contact-info h3,
+  .contact-right .hours h3,
+  .contact-right .faq h3 {
+    font-size: 0.95rem;
+    margin: 0 0 6px 0;
+  }
+
+  .contact-right .contact-info p,
+  .contact-right .hours p,
+  .contact-right .faq p {
+    font-size: 0.85rem;
+    margin: 4px 0;
+  }
+
+  .map-box {
+    height: 150px;
+  }
+}

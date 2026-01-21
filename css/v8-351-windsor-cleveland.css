@@ -1,0 +1,45 @@
+@import url('style.css');
+
+/* V8 351 Windsor/Cleveland page styles */
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .page-content {
+    padding: 30px 20px;
+  }
+
+  .gallery-grid, .specs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-content {
+    padding: 20px 15px;
+  }
+
+  .page-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .gallery-grid, .specs-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page-content {
+    padding: 15px 12px;
+  }
+
+  .page-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .gallery-grid, .specs-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
