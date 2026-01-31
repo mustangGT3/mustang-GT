@@ -1,0 +1,8 @@
+# robots.txt for Mustang GT
+# Replace "yourdomain.com" below with your real domain before publishing
+
+User-agent: *
+Disallow:
+
+# Sitemap (use absolute URL for best results)
+Sitemap: https://yourdomain.com/sitemap.xml

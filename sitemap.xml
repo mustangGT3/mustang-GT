@@ -5,7 +5,7 @@
   <!-- Homepage - Most Important -->
   <url>
     <loc>https://yourdomain.com/index.html</loc>
-    <lastmod>2025-11-25</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -13,35 +13,35 @@
   <!-- Mustang Models Detail Pages -->
   <url>
     <loc>https://yourdomain.com/mustang-gt.html</loc>
-    <lastmod>2025-11-25</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://yourdomain.com/mustang-shelby.html</loc>
-    <lastmod>2025-11-25</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://yourdomain.com/mustang-performance.html</loc>
-    <lastmod>2025-11-25</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://yourdomain.com/mustang-classic.html</loc>
-    <lastmod>2025-11-25</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://yourdomain.com/mustang-mach-e.html</loc>
-    <lastmod>2025-11-25</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -49,35 +49,35 @@
   <!-- Engine Specification Pages -->
   <url>
     <loc>https://yourdomain.com/coyote-5-0-v8.html</loc>
-    <lastmod>2025-11-25</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://yourdomain.com/voodoo-5-2-v8.html</loc>
-    <lastmod>2025-11-25</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://yourdomain.com/predator-5-2-v8.html</loc>
-    <lastmod>2025-11-25</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://yourdomain.com/ecoboost-2-3-i4.html</loc>
-    <lastmod>2025-11-25</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://yourdomain.com/v8-289-windsor.html</loc>
-    <lastmod>2025-11-25</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>

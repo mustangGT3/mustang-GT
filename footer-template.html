@@ -45,3 +45,67 @@
     </div>
     <div class="footer-bottom">&copy; Mustang GT — Built with passion.</div>
   </footer>
+  
+  <!-- JSON-LD (Organization + Website) and head-meta fallback injector -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Mustang GT",
+        "url": "https://yourdomain.com",
+        "logo": "https://yourdomain.com/img/logo-footer.png",
+        "sameAs": [
+          "https://www.facebook.com/",
+          "https://www.instagram.com/",
+          "https://www.youtube.com/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "url": "https://yourdomain.com",
+        "name": "Mustang GT",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://yourdomain.com/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script>
+  (function(){
+    var domain = 'https://yourdomain.com';
+    var defaults = {
+      title: document.title || 'Mustang GT',
+      description: (document.querySelector('meta[name="description"]')||{}).content || 'Mustang GT — Performance builds, tuning, and community.',
+      image: domain + '/img/logo-footer.png',
+      url: domain + (location.pathname === '/' ? '/index.html' : location.pathname)
+    };
+
+    function ensureTag(tag, attrs, selector){
+      if(!document.querySelector(selector)){
+        var el = document.createElement(tag);
+        for(var k in attrs) if(attrs.hasOwnProperty(k)) el.setAttribute(k, attrs[k]);
+        document.head.appendChild(el);
+      }
+    }
+
+    ensureTag('link', {rel: 'canonical', href: defaults.url}, 'link[rel="canonical"]');
+
+    ensureTag('meta', {property: 'og:title', content: defaults.title}, 'meta[property="og:title"]');
+    ensureTag('meta', {property: 'og:description', content: defaults.description}, 'meta[property="og:description"]');
+    ensureTag('meta', {property: 'og:image', content: defaults.image}, 'meta[property="og:image"]');
+    ensureTag('meta', {property: 'og:type', content: 'website'}, 'meta[property="og:type"]');
+    ensureTag('meta', {property: 'og:url', content: defaults.url}, 'meta[property="og:url"]');
+
+    ensureTag('meta', {name: 'twitter:card', content: 'summary_large_image'}, 'meta[name="twitter:card"]');
+    ensureTag('meta', {name: 'twitter:title', content: defaults.title}, 'meta[name="twitter:title"]');
+    ensureTag('meta', {name: 'twitter:description', content: defaults.description}, 'meta[name="twitter:description"]');
+    ensureTag('meta', {name: 'twitter:image', content: defaults.image}, 'meta[name="twitter:image"]');
+
+  })();
+  </script>
